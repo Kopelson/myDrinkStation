@@ -1,0 +1,33 @@
+.header {
+    background-color: #eeeeee;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav a img {
+    width: 250px;
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+    font-size: 2em;
+    color: #44305e;
+    background-color: #ad95be00;
+    border: none;
+    cursor: pointer;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active {
+    background-color: #e1c6f8;
+}

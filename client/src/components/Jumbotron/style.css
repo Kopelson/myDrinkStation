@@ -1,0 +1,13 @@
+.jumbotron-outer{
+    margin: auto;
+}
+
+.jumbotron-inner {
+    background-color: #eeeeee;
+    color: #525f77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px 0px;
+}

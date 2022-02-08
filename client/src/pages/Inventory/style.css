@@ -1,0 +1,24 @@
+.table-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-transform: capitalize;
+    cursor:default;
+}
+
+.table-header h2{
+    color: #e1c6f8;
+    cursor:default;
+}
+
+.quantity-changer{
+    text-align: center;
+}
+
+.quantity-changer button {
+    padding: 5px 10px;
+    color: #e1c6f8;
+    background-color:#695b7a;
+    cursor: pointer;
+}

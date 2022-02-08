@@ -1,0 +1,26 @@
+.btn {
+    background-color: #fcfcfc;
+    color: #525f77;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #525f77;
+}
+
+a:visited{
+    color: #525f77;
+}
+
+:disabled{
+    background-color: grey;
+}
