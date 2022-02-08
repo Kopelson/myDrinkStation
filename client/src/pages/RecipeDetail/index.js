@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link , useParams, useNavigate } from "react-router-dom";
 import Jumbotron from '../../components/Jumbotron';
 import Button from "../../components/Button";
 import API from "../../utils/API";
@@ -10,8 +10,9 @@ function Detail() {
     author: "",
     recipe: ""
   });
+
   const {id} = useParams()
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     let componentMounted = true;
@@ -42,14 +43,14 @@ function Detail() {
           author: formObject.author,
           recipe: formObject.recipe
         })
-        .then(history.push(`/recipes`))
+        .then(navigate(`/recipes`))
         .catch(err => console.log(err));
       };
   };
 
   function handleDelete(){
     API.deleteRecipe(id)
-    .then(history.push(`/recipes`))
+    .then(navigate(`/recipes`))
     .catch(err => console.log(err))
   }
 
@@ -57,6 +58,7 @@ function Detail() {
       <div>
         <Jumbotron
           title="Recipe Details"
+          link="/"
         >
         </Jumbotron>
         <div className="col-12 form">
@@ -100,7 +102,7 @@ function Detail() {
                 style={{width:"100%"}}
               >
                 ← Back to Recipes
-              </Button>
+               </Button>
             </Link>
         </div>  
       </div>

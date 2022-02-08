@@ -81,8 +81,7 @@ function Recipes() {
               <List>
                 {tableResults.map(item => (
                   <ListItem key={item._id}>
-                        <Link to={"/recipes/" + item._id}
-                        >
+                        <Link to={"/recipes/" + item._id}>
                             <h1>{item.title}</h1>
                             <p>by {item.author}</p>
                         </Link>

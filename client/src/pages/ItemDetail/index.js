@@ -55,6 +55,7 @@ function ItemDetail() {
       <div>
         <Jumbotron
           title="Item Details"
+          link="/"
         >
         </Jumbotron>
         <div className="col-12 form">

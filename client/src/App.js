@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Drinks from "./pages/Drinks/index";
-import Detail from "./pages/Detail/index";
-import Create from "./pages/Create/index";
-import NoMatch from "./pages/NoMatch/index";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Drinks from "./pages/Drinks";
+import Detail from "./pages/Detail";
+import Create from "./pages/Create";
+import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Header";
 import Footer from "./components/Footer";
 import Inventory from "./pages/Inventory";
@@ -19,15 +19,16 @@ function App() {
       <div>
         <Nav />
         <Routes>
-          <Route exact path="/" element={<Drinks />}/>
-          <Route exact path="/drinks/:id" element={<Detail />}/>
-          <Route exact path="/create" element={<Create />}/>
-          <Route exact path="/inventory" element={<Inventory />}/>
-          <Route exact path="/addItem" element={<AddItem />}/>
-          <Route exact path="/inventory/:id" element={<ItemDetail />}/>
-          <Route exact path="/recipes" element={<Recipes />}/>
-          <Route exact path="/addRecipes" element={<AddRecipe />} />
-          <Route exact path="/recipes/:id" element={<RecipeDetail />} />
+        <Route path="/" element={<Drinks/>} />
+          <Route path="/drinks" element={<Drinks />} />
+          <Route path="/drinks/:id" element={<Detail />} />
+          <Route path="/create" element={ <Create />}/>
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/addItem" element={<AddItem />} />
+          <Route path="/inventory/:id" element={<ItemDetail />} />
+          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/addRecipes" element={<AddRecipe />} />
+          <Route path="/recipes/:id" element={<RecipeDetail />} />
           <Route path="*" element={<NoMatch />} /> 
         </Routes>
         <Footer />

@@ -160,7 +160,7 @@ function Drinks() {
         title="Drinks: "
         iconClass='col-12 fas fa-plus-square'
         icon='⬅ Create a new Drink Here!'
-        link= "/create"
+        link="/create"
       >
       </Jumbotron>
       
@@ -180,11 +180,11 @@ function Drinks() {
                       author={drink.author}
                       ingredients={drink.ingredients}
                     >
-                      <h1>
-                        {drink.title} 
-                      </h1>
-                      <p>by {drink.author}</p>
-                      <p className="ingredients">({drink.ingredients})</p>
+                        <h1>
+                          {drink.title} 
+                        </h1>
+                        <p>by {drink.author}</p>
+                        <p className="ingredients">({drink.ingredients})</p>
                       </Link>
                   </ListItem>
                 ))}

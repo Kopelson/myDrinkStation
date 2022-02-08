@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Jumbotron from '../../components/Jumbotron';
-import { Link,  useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Input, TextArea } from "../../components/Form";
 import Button from "../../components/Button";
 
@@ -12,7 +12,7 @@ function Create() {
     author: "",
     ingredients: ""
   });
-  const history = useNavigate();
+
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -27,7 +27,7 @@ function Create() {
           author: formObject.author,
           ingredients: formObject.ingredients
         })
-        .then(history.push(`/`))
+        .then( console.log("Success"))
         .catch(err => console.log(err));
       };
   };
@@ -36,6 +36,7 @@ function Create() {
      <div>
        <Jumbotron
           title="Add Drink"
+          link="/"
         >
         </Jumbotron>
         <div className="col-12 form">
@@ -66,11 +67,11 @@ function Create() {
               </Button>
               
               <Link to="/">
-              <Button
-                style={{width:"100%",fontSize:"24px"}}
-              >
-                ← Back to Drink Station
-              </Button>
+                <Button
+                  style={{width:"100%",fontSize:"24px"}}
+                >
+                  ← Back to Drink Station
+                </Button>
               </Link>
           </div>
      </div>

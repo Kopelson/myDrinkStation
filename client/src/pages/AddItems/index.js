@@ -34,6 +34,7 @@ function AddItems() {
      <div>
        <Jumbotron
           title="Add Item to Inventory"
+          link="/"
         >
         </Jumbotron>
         <div className="col-12 form">

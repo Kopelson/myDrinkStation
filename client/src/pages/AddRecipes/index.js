@@ -12,7 +12,7 @@ function Create() {
     author: "",
     recipe: ""
   });
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   function handleInputChange(event) {
     const { name, value } = event.target;
@@ -27,7 +27,7 @@ function Create() {
           author: formObject.author,
           recipe: formObject.recipe
         })
-        .then(history.push(`/recipes`))
+        .then(navigate(`/recipes`))
         .catch(err => console.log(err));
       };
   };
@@ -36,6 +36,7 @@ function Create() {
      <div>
        <Jumbotron
           title="Add Recipe"
+          link="/"
         >
         </Jumbotron>
         <div className="col-12 form">

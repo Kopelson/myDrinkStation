@@ -12,7 +12,7 @@ function Detail() {
     ingredients: ""
   });
   const {id} = useParams()
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     let componentMounted = true;
@@ -43,14 +43,14 @@ function Detail() {
           author: formObject.author,
           ingredients: formObject.ingredients
         })
-        .then(history.push(`/`))
+        .then(navigate(`/`))
         .catch(err => console.log(err));
       };
   };
 
   function handleDelete(){
     API.deleteDrink(id)
-    .then(history.push(`/`))
+    .then(navigate(`/`))
     .catch(err => console.log(err))
   }
 
@@ -58,6 +58,7 @@ function Detail() {
       <div>
         <Jumbotron
           title="Drink Details"
+          link="/"
         >
         </Jumbotron>
         <div className="col-12 form">
