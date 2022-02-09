@@ -40,14 +40,14 @@ function ItemDetail() {
           name: formObject.name,
           quantity: formObject.quantity
         })
-        .then(history.push(`/inventory`))
+        .then(history(`/inventory`))
         .catch(err => console.log(err));
       };
   };
 
   function handleDelete(){
     API.deleteInventory(id)
-    .then(history.push(`/inventory`))
+    .then(history(`/inventory`))
     .catch(err => console.log(err))
   }
 

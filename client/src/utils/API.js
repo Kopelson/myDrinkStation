@@ -1,64 +1,68 @@
 import axios from "axios";
 
-export default {
   // Gets all drinks
-  getDrinks: function() {
+  function getDrinks() {
     return axios.get("/api/drinks");
-  },
+  }
   // Gets the drink with the given id
-  getDrink: function(id) {
+  function getDrink(id) {
     return axios.get("/api/drinks/" + id);
-  },
+  }
   // Deletes the drink with the given id
-  deleteDrink: function(id) {
+  function deleteDrink(id) {
     return axios.delete("/api/drinks/" + id);
-  },
+  }
   // Saves a drink to the database
-  saveDrink: function(drinkData) {
+  function saveDrink(drinkData) {
     return axios.post("/api/drinks", drinkData);
-  },
+  }
   // Updates a drink by id
-  updateDrink: function (id, drinkData) {
+  function updateDrink (id, drinkData) {
     return axios.put("/api/drinks/" + id, drinkData);
-  },
+  }
   // Gets all inventory
-  getInventory: function() {
+  function getInventory() {
     return axios.get("/api/inventory");
-  },
+  }
   // Gets the drink with the given id
-  getInventoryItem: function(id) {
+  function getInventoryItem(id) {
     return axios.get("/api/inventory/" + id);
-  },
+  }
   // Deletes the drink with the given id
-  deleteInventory: function(id) {
+  function deleteInventory(id) {
     return axios.delete("/api/inventory/" + id);
-  },
+  }
   // Saves a drink to the database
-  saveInventory: function(inventoryData) {
+  function saveInventory(inventoryData) {
     return axios.post("/api/inventory", inventoryData);
-  },
+  }
   // Updates a drink by id
-  updateInventory: function (id, inventoryData) {
+  function updateInventory (id, inventoryData) {
     return axios.put("/api/inventory/" + id, inventoryData);
-  },
+  }
    // Gets all inventory
-   getRecipes: function() {
+   function getRecipes() {
     return axios.get("/api/recipes");
-  },
+  }
   // Gets the drink with the given id
-  getRecipe: function(id) {
+  function getRecipe(id) {
     return axios.get("/api/recipes/" + id);
-  },
+  }
   // Deletes the drink with the given id
-  deleteRecipe: function(id) {
+  function deleteRecipe(id) {
     return axios.delete("/api/recipes/" + id);
-  },
+  }
   // Saves a drink to the database
-  saveRecipe: function(recipeData) {
+  function saveRecipe(recipeData) {
     return axios.post("/api/recipes", recipeData);
-  },
+  }
   // Updates a drink by id
-  updateRecipe: function (id, recipeData) {
+  function updateRecipe (id, recipeData) {
     return axios.put("/api/recipes/" + id, recipeData);
-  },
+  }
+const API = { getDrink, getDrinks, deleteDrink, saveDrink, updateDrink, 
+  getInventory, getInventoryItem, saveInventory, deleteInventory, updateInventory,
+  getRecipe, getRecipes, deleteRecipe, saveRecipe, updateRecipe
 };
+
+export default API;

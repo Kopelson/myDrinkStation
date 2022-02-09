@@ -25,7 +25,7 @@ function AddItems() {
           name: formObject.name,
           quantity: formObject.quantity
         })
-        .then(history.push(`/inventory`))
+        .then(history(`/inventory`))
         .catch(err => console.log(err));
       };
   };
