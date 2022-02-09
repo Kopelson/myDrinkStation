@@ -8,7 +8,7 @@
 }
 
 .table-header h2{
-    color: #e1c6f8;
+    color: #111111;
     cursor:default;
 }
 
@@ -18,7 +18,7 @@
 
 .quantity-changer button {
     padding: 5px 10px;
-    color: #e1c6f8;
-    background-color:#695b7a;
+    color: #111111;
+    background-color:#eeeeee;
     cursor: pointer;
 }

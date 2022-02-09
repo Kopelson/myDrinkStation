@@ -7,15 +7,15 @@ ul li {
     display: inline-block;
     width: 100%;
     padding: 15px;
-    border-bottom: 2px solid #525f77;
+    border-bottom: 2px solid #111111;
 }
 
 ul li p {
-    color: #525f77;
+    color: #111111;
 }
 
 ul li h1 {
-    color: #525f77;
+    color: #111111;
 }
 
 ul li * {
@@ -35,5 +35,5 @@ ul li a:visited {
 }
 
 ul li:nth-child(even){
-    background-color: #eeeeee;
+    background-color: #f0f8ff;
 }

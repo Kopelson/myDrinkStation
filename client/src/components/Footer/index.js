@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footer col-12">
        <nav>
-        <small>Gigi's Drink Station © 2021</small>
+        <small>My Drink Station © 2022</small>
       </nav>
     </div>
   );

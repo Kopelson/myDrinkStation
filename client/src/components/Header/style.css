@@ -1,5 +1,6 @@
 .header {
     background-color: #eeeeee;
+    min-height: 60px;
 }
 
 nav a {
@@ -18,8 +19,7 @@ nav a img {
     right: 0px;
     padding: 10px;
     font-size: 2em;
-    color: #44305e;
-    background-color: #ad95be00;
+    color: #111111;
     border: none;
     cursor: pointer;
 }

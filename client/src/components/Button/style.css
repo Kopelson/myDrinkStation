@@ -1,6 +1,6 @@
 .btn {
     background-color: #fcfcfc;
-    color: #525f77;
+    color: #111111;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
@@ -14,13 +14,13 @@
 a{
     text-decoration: none;
     text-transform: capitalize;
-    color: #525f77;
+    color: #111111;
 }
 
 a:visited{
-    color: #525f77;
+    color: #111111;
 }
 
 :disabled{
-    background-color: grey;
+    background-color: #f3e5dc;
 }
