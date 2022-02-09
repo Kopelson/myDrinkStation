@@ -1,12 +1,15 @@
+require('dotenv').config();
 const mongoose = require("mongoose");
 const db = require("../models");
 
 // This file empties the Drinks collection and inserts the drinks below
 mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/mydrinkstation", 
-  { useUnifiedTopology: true,
-    useNewUrlParser: true }  
+  process.env.MONGODB_URI, 
+  { 
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    tlsCAFile: "./ca-certificate.crt"
+  }  
 );
 
 const drinkSeed = [
