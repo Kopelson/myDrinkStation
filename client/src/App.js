@@ -12,6 +12,7 @@ import ItemDetail from "./pages/ItemDetail";
 import Recipes from "./pages/Recipes";
 import AddRecipe from "./pages/AddRecipes";
 import RecipeDetail from "./pages/RecipeDetail";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <div>
         <Nav />
         <Routes>
-        <Route path="/" element={<Drinks/>} />
+        <Route path="/" element={<Login/>} />
           <Route path="/drinks" element={<Drinks />} />
           <Route path="/drinks/:id" element={<Detail />} />
           <Route path="/create" element={ <Create />}/>

@@ -24,7 +24,7 @@ function Header() {
             Logo
           </a>
         </nav>
-        <button className="menu" type="button" onClick={() => handleMenu()}><i className="fas fa-bars" ></i></button>
+        <button aria-label="menu" className="menu" type="button" onClick={() => handleMenu()}><i className="fas fa-bars" ></i></button>
       </div>
       {menu ?(
         <div>
